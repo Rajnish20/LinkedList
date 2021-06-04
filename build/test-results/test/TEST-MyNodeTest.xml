@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyNodeTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-06-04T11:00:43" hostname="DESKTOP-38KI29F" time="0.048">
+<testsuite name="MyNodeTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-06-04T11:14:35" hostname="DESKTOP-38KI29F" time="0.056">
   <properties/>
-  <testcase name="given2Number_ShouldInsertAfterFirstGivenNumber()" classname="MyNodeTest" time="0.04"/>
-  <testcase name="givenThreeNumbers_ShouldAddInLinkedList()" classname="MyNodeTest" time="0.001"/>
-  <testcase name="givenThreeNumbers_ShouldAppendInLinkedList()" classname="MyNodeTest" time="0.001"/>
+  <testcase name="given2Number_ShouldInsertAfterFirstGivenNumber()" classname="MyNodeTest" time="0.045"/>
+  <testcase name="shouldDeleteFromBeginning()" classname="MyNodeTest" time="0.002"/>
+  <testcase name="givenThreeNumbers_ShouldAddInLinkedList()" classname="MyNodeTest" time="0.002"/>
+  <testcase name="givenThreeNumbers_ShouldAppendInLinkedList()" classname="MyNodeTest" time="0.002"/>
   <testcase name="givenT3Numbers_WhenLinked_ShouldPassLinkedListTest()" classname="MyNodeTest" time="0.002"/>
   <system-out><![CDATA[10
+20
+50
+10
+20
+50
 20
 50
 30

@@ -33,13 +33,19 @@ public class MyLinkedList<E> {
         while (temp.data != data1 && temp.next != null) {
             temp = temp.next;
         }
-        if(temp.next != null)
-        {
+        if (temp.next != null) {
             myNode.next = temp.next;
             temp.next = myNode;
-        }
-        else
+        } else
             System.out.println(data1 + " is not present ");
+    }
+
+    public void deleteFirstElement() {
+        if (head == null)
+            System.out.println("LinkedList is Already Empty");
+        else {
+            head = head.next;
+        }
     }
 
     public void printLinkedList() {
@@ -49,4 +55,5 @@ public class MyLinkedList<E> {
             tempNode = tempNode.next;
         }
     }
+
 }
