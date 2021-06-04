@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-04T12:53:06" hostname="DESKTOP-38KI29F" time="0.025">
+<testsuite name="MyNodeTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-06-04T16:41:07" hostname="DESKTOP-38KI29F" time="0.055">
   <properties/>
-  <testcase name="givenInteger_ShouldBeDeletedFromLinkedList()" classname="MyNodeTest" time="0.025"/>
+  <testcase name="given2Number_ShouldInsertAfterFirstGivenNumber()" classname="MyNodeTest" time="0.029"/>
+  <testcase name="givenInteger_ShouldBeDeletedFromLinkedList()" classname="MyNodeTest" time="0.001"/>
+  <testcase name="shouldDeleteFromBeginning()" classname="MyNodeTest" time="0.002"/>
+  <testcase name="givenIntegers_ShouldBeAddedInLinkedList_InSortedManner()" classname="MyNodeTest" time="0.003"/>
+  <testcase name="givenInteger_WhenPresent_ShouldReturnTrue()" classname="MyNodeTest" time="0.003"/>
+  <testcase name="givenInteger_WhenNotPresent_ShouldReturnFalse()" classname="MyNodeTest" time="0.002"/>
+  <testcase name="shouldDeleteLast()" classname="MyNodeTest" time="0.002"/>
+  <testcase name="givenThreeNumbers_ShouldAddInLinkedList()" classname="MyNodeTest" time="0.001"/>
+  <testcase name="givenThreeNumbers_ShouldAppendInLinkedList()" classname="MyNodeTest" time="0.001"/>
+  <testcase name="givenT3Numbers_WhenLinked_ShouldPassLinkedListTest()" classname="MyNodeTest" time="0.001"/>
   <system-out><![CDATA[10
 20
 50
+10
+20
+50
+10
+20
+50
+20
+50
+1
+8
+9
+10
+20
+50
+10
+20
+50
+10
+20
+50
+10
+20
+30
+20
+10
+10
+20
+30
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

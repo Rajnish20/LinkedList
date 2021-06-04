@@ -61,40 +61,31 @@ public class MyLinkedList<E> {
         }
     }
 
-    public boolean search(E data)
-    {
+    public boolean search(E data) {
         MyNode<E> tempNode = head;
-        while(tempNode != null)
-        {
-            if(tempNode.data == data)
-            {
+        while (tempNode != null) {
+            if (tempNode.data == data) {
                 return true;
             }
             tempNode = tempNode.next;
         }
         return false;
     }
-    public void deleteFromLinkedList(E data)
-    {
-        if(head.data == data)
-        {
+
+    public void deleteFromLinkedList(E data) {
+        if (head.data == data) {
             head = head.next;
         }
         MyNode<E> temp = head;
-        if(tail.data == data)
-        {
+        if (tail.data == data) {
             while (temp.next != tail) {
                 temp = temp.next;
             }
             tail = temp;
             temp.next = null;
-        }
-        else
-        {
-            while(temp.next != null)
-            {
-                if(temp.next.data == data)
-                {
+        } else {
+            while (temp.next != null) {
+                if (temp.next.data == data) {
                     MyNode<E> found = temp.next;
                     temp.next = found.next;
                 }
@@ -109,6 +100,16 @@ public class MyLinkedList<E> {
             System.out.println(tempNode.data);
             tempNode = tempNode.next;
         }
+    }
+
+    public static void main(String[] args) {
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.append(30);
+        myLinkedList.append(40);
+        myLinkedList.append(20);
+        myLinkedList.printLinkedList();
+        myLinkedList.deleteFromLinkedList(20);
+        myLinkedList.printLinkedList();
     }
 
 }

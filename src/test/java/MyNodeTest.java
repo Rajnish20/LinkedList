@@ -1,5 +1,6 @@
 import com.magic.datastructures.MyLinkedList;
 import com.magic.datastructures.MyNode;
+import com.magic.datastructures.SortedLinkedList;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -107,9 +108,21 @@ public class MyNodeTest {
         myLinkedList.append(20);
         myLinkedList.append(50);
         myLinkedList.printLinkedList();
-        myLinkedList.deleteFromLinkedList(20);
-        boolean result = myLinkedList.head.data == 10 && myLinkedList.head.next.data == 50;
+        myLinkedList.deleteFromLinkedList(50);
+        boolean result = myLinkedList.head.data == 10 && myLinkedList.head.next.data == 20;
         Assertions.assertTrue(result);
     }
-    
+
+    @Test
+    public void givenIntegers_ShouldBeAddedInLinkedList_InSortedManner() {
+        SortedLinkedList<Integer> sortedLinkedList = new SortedLinkedList<>();
+        sortedLinkedList.add(8);
+        sortedLinkedList.add(9);
+        sortedLinkedList.add(1);
+        sortedLinkedList.print();
+        boolean result = sortedLinkedList.head.data == 1 && sortedLinkedList.head.next.data == 8 &&
+                sortedLinkedList.head.next.next.data == 9;
+        Assertions.assertTrue(result);
+    }
+
 }
