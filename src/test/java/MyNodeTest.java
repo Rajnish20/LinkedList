@@ -127,13 +127,26 @@ public class MyNodeTest {
     }
 
     @Test
-    public void given3Integers_WhenAddedToStack_ShouldHaveLastAddedNode()
-    {
+    public void given3Integers_WhenAddedToStack_ShouldHaveLastAddedNode() {
         Stack<Integer> stack = new Stack<>();
         stack.push(3);
         stack.push(1);
         stack.push(10);
         MyNode<Integer> result = stack.peak();
-        Assertions.assertEquals(result.data,10);
+        Assertions.assertEquals(result.data, 10);
+    }
+
+    @Test
+    public void given3IntegersInStack_WhenPopped_ShouldMatchWithSecondLastAddedNode() {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(3);
+        stack.push(1);
+        stack.push(10);
+        stack.printStack();
+        stack.pop();
+        stack.printStack();
+        MyNode<Integer> result = stack.peak();
+        Assertions.assertEquals(result.data, 1);
+
     }
 }

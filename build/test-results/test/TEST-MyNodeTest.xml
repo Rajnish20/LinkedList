@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-04T17:25:14" hostname="DESKTOP-38KI29F" time="0.028">
+<testsuite name="MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-04T17:35:07" hostname="DESKTOP-38KI29F" time="0.029">
   <properties/>
-  <testcase name="given3Integers_WhenAddedToStack_ShouldHaveLastAddedNode()" classname="MyNodeTest" time="0.028"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="given3IntegersInStack_WhenPopped_ShouldMatchWithSecondLastAddedNode()" classname="MyNodeTest" time="0.029"/>
+  <system-out><![CDATA[10
+1
+3
+1
+3
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
