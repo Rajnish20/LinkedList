@@ -1,0 +1,2 @@
+com/magic/datastructures/MyNode.java
+ com.magic.datastructures.MyNode
