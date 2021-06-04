@@ -16,6 +16,17 @@ public class MyLinkedList<E> {
         this.head = myNode;
     }
 
+    public void append(E data) {
+        MyNode<E> myNode = new MyNode<>(data);
+        if (head == null) {
+            this.head = myNode;
+        }
+        if (tail != null) {
+            tail.next = myNode;
+        }
+        this.tail = myNode;
+    }
+
     public void printLinkedList() {
         MyNode<E> tempNode = head;
         while (tempNode != null) {

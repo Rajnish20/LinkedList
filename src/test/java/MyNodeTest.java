@@ -29,6 +29,18 @@ public class MyNodeTest {
         Assertions.assertTrue(result);
     }
 
+    @Test
+    public void givenThreeNumbers_ShouldAppendInLinkedList()
+    {
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.append(10);
+        myLinkedList.append(20);
+        myLinkedList.append(30);
+        myLinkedList.printLinkedList();
+        boolean result = myLinkedList.head.data == 10 && myLinkedList.head.getNext().data == 20 && myLinkedList.head.getNext().getNext().data == 30;
+        Assertions.assertTrue(result);
+    }
+
     
 
 }
