@@ -1,6 +1,7 @@
 import com.magic.datastructures.MyLinkedList;
 import com.magic.datastructures.MyNode;
 import com.magic.datastructures.SortedLinkedList;
+import com.magic.datastructures.Stack;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -125,4 +126,14 @@ public class MyNodeTest {
         Assertions.assertTrue(result);
     }
 
+    @Test
+    public void given3Integers_WhenAddedToStack_ShouldHaveLastAddedNode()
+    {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(3);
+        stack.push(1);
+        stack.push(10);
+        MyNode<Integer> result = stack.peak();
+        Assertions.assertEquals(result.data,10);
+    }
 }

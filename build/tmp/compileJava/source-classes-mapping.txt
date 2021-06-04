@@ -4,3 +4,5 @@ com/magic/datastructures/MyLinkedList.java
  com.magic.datastructures.MyLinkedList
 com/magic/datastructures/SortedLinkedList.java
  com.magic.datastructures.SortedLinkedList
+com/magic/datastructures/Stack.java
+ com.magic.datastructures.Stack

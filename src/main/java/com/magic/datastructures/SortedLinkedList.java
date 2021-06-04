@@ -27,14 +27,4 @@ public class SortedLinkedList<E extends Comparable<E>> {
         }
     }
 
-    public static void main(String[] args) {
-        com.magic.datastructures.SortedLinkedList<Integer> sortedLinkedList = new com.magic.datastructures.SortedLinkedList<>();
-        sortedLinkedList.add(3);
-        sortedLinkedList.add(4);
-        sortedLinkedList.add(9);
-        sortedLinkedList.add(5);
-        sortedLinkedList.add(2);
-        sortedLinkedList.add(8);
-        sortedLinkedList.print();
-    }
 }
