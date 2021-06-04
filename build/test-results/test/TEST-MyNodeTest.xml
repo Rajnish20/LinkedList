@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyNodeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-06-04T12:20:31" hostname="DESKTOP-38KI29F" time="0.054">
+<testsuite name="MyNodeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-04T12:53:06" hostname="DESKTOP-38KI29F" time="0.025">
   <properties/>
-  <testcase name="given2Number_ShouldInsertAfterFirstGivenNumber()" classname="MyNodeTest" time="0.038"/>
-  <testcase name="shouldDeleteFromBeginning()" classname="MyNodeTest" time="0.001"/>
-  <testcase name="shouldDeleteLast()" classname="MyNodeTest" time="0.003"/>
-  <testcase name="givenThreeNumbers_ShouldAddInLinkedList()" classname="MyNodeTest" time="0.002"/>
-  <testcase name="givenThreeNumbers_ShouldAppendInLinkedList()" classname="MyNodeTest" time="0.003"/>
-  <testcase name="givenT3Numbers_WhenLinked_ShouldPassLinkedListTest()" classname="MyNodeTest" time="0.001"/>
+  <testcase name="givenInteger_ShouldBeDeletedFromLinkedList()" classname="MyNodeTest" time="0.025"/>
   <system-out><![CDATA[10
 20
 50
-10
-20
-50
-20
-50
-10
-20
-50
-10
-20
-30
-20
-10
-10
-20
-30
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

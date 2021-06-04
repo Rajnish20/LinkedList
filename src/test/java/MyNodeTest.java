@@ -76,6 +76,40 @@ public class MyNodeTest {
         myLinkedList.printLinkedList();
         boolean result = myLinkedList.head.data == 10 && myLinkedList.head.getNext().data == 20;
         Assertions.assertTrue(result);
-
     }
+
+    @Test
+    public void givenInteger_WhenPresent_ShouldReturnTrue() {
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.append(10);
+        myLinkedList.append(20);
+        myLinkedList.append(50);
+        myLinkedList.printLinkedList();
+        boolean result = myLinkedList.search(20);
+        Assertions.assertTrue(result);
+    }
+
+    @Test
+    public void givenInteger_WhenNotPresent_ShouldReturnFalse() {
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.append(10);
+        myLinkedList.append(20);
+        myLinkedList.append(50);
+        myLinkedList.printLinkedList();
+        boolean result = myLinkedList.search(40);
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenInteger_ShouldBeDeletedFromLinkedList() {
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.append(10);
+        myLinkedList.append(20);
+        myLinkedList.append(50);
+        myLinkedList.printLinkedList();
+        myLinkedList.deleteFromLinkedList(20);
+        boolean result = myLinkedList.head.data == 10 && myLinkedList.head.next.data == 50;
+        Assertions.assertTrue(result);
+    }
+    
 }

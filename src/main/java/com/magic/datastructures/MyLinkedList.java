@@ -61,6 +61,48 @@ public class MyLinkedList<E> {
         }
     }
 
+    public boolean search(E data)
+    {
+        MyNode<E> tempNode = head;
+        while(tempNode != null)
+        {
+            if(tempNode.data == data)
+            {
+                return true;
+            }
+            tempNode = tempNode.next;
+        }
+        return false;
+    }
+    public void deleteFromLinkedList(E data)
+    {
+        if(head.data == data)
+        {
+            head = head.next;
+        }
+        MyNode<E> temp = head;
+        if(tail.data == data)
+        {
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            tail = temp;
+            temp.next = null;
+        }
+        else
+        {
+            while(temp.next != null)
+            {
+                if(temp.next.data == data)
+                {
+                    MyNode<E> found = temp.next;
+                    temp.next = found.next;
+                }
+                temp = temp.next;
+            }
+        }
+    }
+
     public void printLinkedList() {
         MyNode<E> tempNode = head;
         while (tempNode != null) {
