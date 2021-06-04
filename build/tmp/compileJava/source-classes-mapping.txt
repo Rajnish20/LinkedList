@@ -1,2 +1,4 @@
 com/magic/datastructures/MyNode.java
  com.magic.datastructures.MyNode
+com/magic/datastructures/MyLinkedList.java
+ com.magic.datastructures.MyLinkedList
