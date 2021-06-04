@@ -65,5 +65,17 @@ public class MyNodeTest {
 
     }
 
+    @Test
+    public void shouldDeleteLast() {
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.append(10);
+        myLinkedList.append(20);
+        myLinkedList.append(50);
+        myLinkedList.printLinkedList();
+        myLinkedList.deleteLastElement();
+        myLinkedList.printLinkedList();
+        boolean result = myLinkedList.head.data == 10 && myLinkedList.head.getNext().data == 20;
+        Assertions.assertTrue(result);
 
+    }
 }

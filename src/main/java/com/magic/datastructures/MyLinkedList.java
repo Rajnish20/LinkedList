@@ -48,6 +48,19 @@ public class MyLinkedList<E> {
         }
     }
 
+    public void deleteLastElement() {
+        if (tail == null)
+            System.out.println("LinkedList is Already Empty");
+        else {
+            MyNode<E> temp = head;
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            tail = temp;
+            temp.next = null;
+        }
+    }
+
     public void printLinkedList() {
         MyNode<E> tempNode = head;
         while (tempNode != null) {
