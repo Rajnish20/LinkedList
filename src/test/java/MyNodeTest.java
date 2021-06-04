@@ -41,6 +41,20 @@ public class MyNodeTest {
         Assertions.assertTrue(result);
     }
 
+    @Test
+    public void given2Number_ShouldInsertAfterFirstGivenNumber()
+    {
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
+        myLinkedList.append(10);
+        myLinkedList.append(20);
+        myLinkedList.append(50);
+        myLinkedList.printLinkedList();
+        myLinkedList.insert(20,40);
+        boolean result = myLinkedList.head.data == 10 && myLinkedList.head.getNext().data == 20 && myLinkedList.head.getNext().getNext().data == 40 &&
+                         myLinkedList.head.getNext().getNext().getNext().data == 50;
+        Assertions.assertTrue(result);
+    }
+
     
 
 }

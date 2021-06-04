@@ -27,6 +27,21 @@ public class MyLinkedList<E> {
         this.tail = myNode;
     }
 
+    public void insert(E data1, E data) {
+        MyNode<E> myNode = new MyNode<>(data);
+        MyNode<E> temp = head;
+        while (temp.data != data1 && temp.next != null) {
+            temp = temp.next;
+        }
+        if(temp.next != null)
+        {
+            myNode.next = temp.next;
+            temp.next = myNode;
+        }
+        else
+            System.out.println(data1 + " is not present ");
+    }
+
     public void printLinkedList() {
         MyNode<E> tempNode = head;
         while (tempNode != null) {
