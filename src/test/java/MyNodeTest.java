@@ -155,4 +155,17 @@ public class MyNodeTest {
         MyNode<Integer> result = queue.front();
         Assertions.assertEquals(result.data, 10);
     }
+
+    @Test
+    public void given3IntegersInQueue_WhenDequeue_ShouldMatchWithSecondAddedNode() {
+        Queue<Integer> queue = new Queue<>();
+        queue.enqueue(10);
+        queue.enqueue(5);
+        queue.enqueue(20);
+        queue.printQueue();
+        queue.dequeue();
+        queue.printQueue();
+        MyNode<Integer> result = queue.front();
+        Assertions.assertEquals(result.data, 5);
+    }
 }

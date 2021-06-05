@@ -7,8 +7,16 @@ public class Queue<E> {
         myLinkedList.append(data);
     }
 
-    public MyNode<E> front()
-    {
+    public MyNode<E> front() {
         return myLinkedList.head;
     }
+
+    public void dequeue() {
+        myLinkedList.deleteFirstElement();
+    }
+
+    public void printQueue() {
+        myLinkedList.printLinkedList();
+    }
+
 }
