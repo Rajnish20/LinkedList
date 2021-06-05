@@ -6,3 +6,5 @@ com/magic/datastructures/SortedLinkedList.java
  com.magic.datastructures.SortedLinkedList
 com/magic/datastructures/Stack.java
  com.magic.datastructures.Stack
+com/magic/datastructures/Queue.java
+ com.magic.datastructures.Queue

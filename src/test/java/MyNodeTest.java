@@ -1,7 +1,4 @@
-import com.magic.datastructures.MyLinkedList;
-import com.magic.datastructures.MyNode;
-import com.magic.datastructures.SortedLinkedList;
-import com.magic.datastructures.Stack;
+import com.magic.datastructures.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -147,6 +144,15 @@ public class MyNodeTest {
         stack.printStack();
         MyNode<Integer> result = stack.peak();
         Assertions.assertEquals(result.data, 1);
+    }
 
+    @Test
+    public void given3Integers_WhenAddedToQueue_ShouldHaveFirstAddedNode() {
+        Queue<Integer> queue = new Queue<>();
+        queue.enqueue(10);
+        queue.enqueue(5);
+        queue.enqueue(20);
+        MyNode<Integer> result = queue.front();
+        Assertions.assertEquals(result.data, 10);
     }
 }
